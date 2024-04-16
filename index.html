@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Vite App</title>
+  </head>
+  <body class="font-sans text-blue-700 relative">
+    <div class="scroll-watcher h-1 fixed top-0 z-20 bg-blue-700 w-full"></div>
+    <section
+      class="hero w-full h-screen bg-blue-100 grid place-content-center fixed inset-0">
+      <p id="blurTitle" class="text-9xl font-sans max-w-screen-md">Creative developer<br>& designer</p>
+    </section>
+    <section
+      class="hud fixed inset-0 w-full h-screen z-20 flex justify-between text-sm">
+      <div class="left-sidebar flex flex-col justify-between h-full p-10">
+        <img src="/assets/logotype.svg" class="w-4" alt="logotype" />
+        <p>
+          Depuis<br />
+          2017
+        </p>
+        <ul>
+          <li>Accueil</li>
+          <li>À propos</li>
+          <li>Parcours</li>
+          <li>Compétences</li>
+          <li>Projets</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="right-sidebar flex flex-col justify-end h-full p-10">
+        <div
+          class="border-[1px] rounded-full p-3 border-blue-700 hover:bg-blue-700 hover:text-white">
+          <span class="uppercase">cv</span>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper w-full relative z-10">
+      <div class="w-full h-screen"></div>
+      <div class="bg-white py-44 px-clamp">
+        <div class="text-content max-w-screen-md text-balance mb-20">
+          <p class="text-2xl mb-10">
+            Issu initialement d’études supérieures en Web Design et
+            Communication Visuelle, j’ai acquis durant 7 années une solide
+            expérience en tant que D.A digital, en agence ainsi qu’en freelance.
+            Dans la continuité de mes aptitudes initiales, j’ai entrepris en
+            2023 une montée en compétences d’un an à temps complet (validée par
+            une certification professionnelle) dans le domaine du développement
+            Front End, en me spécialisant notamment dans le Framework React. Mon
+            profil de Développeur Front-End et Directeur Artistique me permet
+            d'aborder les projets de développment avec un regard à 360 degrés,
+            renforçant ainsi mon exigence technique par une comprehension
+            avancée du workflow.
+          </p>
+          <p class="text-4xl leading-tight underline underline-offset-4">
+            Ce qui distingue mon approche, c'est ma capacité à intégrer le
+            design et le développement de manière fluide.
+          </p>
+        </div>
+        <div class="text-img-content w-full flex gap-10">
+          <div>
+            <img src="/assets/profilPic.webp" alt="Portrait de Lucien Carrer" />
+          </div>
+          <div class="flex flex-col justify-between">
+            <p class="text-5xl font-bold">Lucien Carrer</p>
+            <p class="text-base">
+              <span class="font-bold">Front End Developper</span><br />
+              Digital Art Director
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="animation-container px-clamp h-[4000px] bg-white">
+        <div class="sticky top-0 h-screen grid place-content-center">
+          <div
+            class="contents [&_svg]:w-full [&_svg]:h-full"
+            x-data="{ svg:null }"
+            x-init="svg = await fetch('/assets/words-anime.svg').then(r => r.text())"
+            x-html="svg"></div>
+        </div>
+      </div>
+      <div class="bg-blue-100 py-44 px-clamp">
+        <div class="text-content text-balance mb-20 flex gap-20">
+          <p class="text-2xl flex-1">
+            Mon profil de Développeur Front-End et Directeur Artistique me
+            permet d'aborder les projets avec un regard à 360 degrés et ainsi de
+            jouer un rôle de pont entre ces deux mondes complémentaires. Mon
+            approche repose sur l'idée que chaque projet digital doit offrir à
+            la fois une expérience visuelle captivante et une ergonomie
+            fonctionnelle sans faille.
+          </p>
+          <div class="w-60 flex flex-col gap-2">
+            <h3 class="font-bold">Master 2<br />Communication Visuelle</h3>
+            <p class="mb-8">
+              HEAR Strasbourg<br />
+              Félicitations du jury
+            </p>
+            <h3 class="font-bold">Certification Pro.<br />RNCP Nv.5</h3>
+            <p>OpenClassrooms<br />Développement Front End</p>
+          </div>
+        </div>
+        <p class="text-4xl leading-tight underline underline-offset-4 max-w-screen-md mb-32">
+          Je crois fermement à l'importance d'un équilibre harmonieux entre l'esthétique et la performance
+        </p>
+        <div class="flex gap-32 text-2xl mb-32">
+          <div>
+            <h3 class="font-bold mb-5">Technologies<br>les plus utilisées</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>Sass</li>
+              <li>Redux</li>
+              <li>Tailwindcss</li>
+              <li>Bootstrap</li>
+              <li>Alpine.js</li>
+              <li>Wordpress</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold mb-5">Logiciels<br>les plus utilisés</h3>
+            <ul>
+              <li>Figma</li>
+              <li>Adobe Xd</li>
+              <li>Adobe InDesign</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Affinity Publisher 2</li>
+              <li>Affinity Photo 2</li>
+              <li>Affinity Designer 2</li>
+              <li>Canva Pro</li>
+              <li>DaVinci Resolve</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-2xl font-bold mb-10">Sélection de projets</h2>
+          <div>
+            <h3 class="text-6xl underline underline-offset-4 mb-5">Festival Démostratif</h3>
+            <div class="flex gap-10 text-xs">
+              <p>Site Responsive</p>
+              <p>avec <span class="font-bold">CODE 16</span> Strasbourg</p>
+              <p class="font-bold">2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
